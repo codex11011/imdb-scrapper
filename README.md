@@ -25,7 +25,8 @@ Follow the following steps to get your script running:-
   
  #### Installing packages  
  
- * To install smtplib:  
+ * To install smtplib:   
+   **smtplib** is a python module which prvides a method to send email. 
  > $ pip install smtplib  
 
  * To install mysql.connector:  

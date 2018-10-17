@@ -53,7 +53,7 @@ def getLatestlink(link):
 def imdb_scrapper(query):
     path = "https://www.google.com/search?q="+str(query)+" tv series imdb"
     r = requests.get(path)
-    time.sleep(5)
+   
     html = r.content
     soup = BeautifulSoup(html, "html5lib")
     first = ((soup.find("div", attrs={"class": "g"})))

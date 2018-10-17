@@ -15,10 +15,9 @@ def savetomysqldb(query_s, email):
     cursor = connection.cursor()
     cursor.execute("CREATE DATABASE IF NOT EXISTS tvseries")
     cursor.execute("use tvseries")
-    cursor.execute("CREATE TABLE IF NOT EXISTS imdbinfo")
     # delete
     sql_command = """
-    CREATE TABLE imdbinfo ( 
+    CREATE TABLE IF NOT EXISTS imdbinfo ( 
     email NVARCHAR(70) PRIMARY KEY,
     tv_series NVARCHAR(70)
     );"""
